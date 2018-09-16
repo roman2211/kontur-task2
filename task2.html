@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+  "use strict";
+    
+   let number = prompt("Введите трехзначное число");
+   let n3 = number % 10;
+   let n2 = Math.floor(number / 10) % 10;
+   let n1 = Math.floor(number / 100) % 10;
+    
+    alert(''+ n3 + n2 + n1);
+    // Вариант решения № 2
+    let str = number + '';
+
+  /**
+   * Функция переворачивает строку, дает ее в обратном порядке
+   * @param  {string} str Строковое значение, которое преобразуется из введенного пользователем числа
+   * @returns {string} Возвращает строку в обратном порядке
+   */
+  function reverseStr(str) {
+    return str.split("").reverse().join("");
+}
+console.log(reverseStr(number));
+    
+</script>
